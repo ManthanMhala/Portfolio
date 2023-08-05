@@ -472,11 +472,13 @@ video {
     /* margin-left: 0.2vw; */
     cursor: pointer;
     font-size: 1.4vw;
-    margin-bottom: 8px;
+    margin-bottom: 2px;
+    color: purple;
 }
 
-#footer-main ul li span {
+#footer-main ul a {
     padding-right: 0.4vw;
+    text-decoration: none;
 }
 
 #footer-main ul li:hover {
@@ -492,6 +494,7 @@ video {
 #footer1 h1 {
     margin-bottom: 1vw;
 }
+
 
 #footer2,
 #footer3 h1 {
