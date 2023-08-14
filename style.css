@@ -12,6 +12,17 @@ body {
     width: 100%;
 }
 
+
+#minicircle{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-color: purple;
+    border-radius: 50%;
+    z-index: 99999;
+    filter: blur(15px);
+}
 video {
     height: 100vh;
     width: 100%;
@@ -79,8 +90,8 @@ video {
 }
 
 
-/*  page1 css */
-#page1 {
+/*  home css */
+#home {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -92,27 +103,27 @@ video {
 
 }
 
-#page1-left h1 {
+#home-left h1 {
     font-size: 4vw;
     font-weight: 900;
     position: relative;
     color: black
 }
 
-#page1-left h2 {
+#home-left h2 {
     margin-top: 20px;
     font-size: 2vw;
 }
 
-#page1-left span {
+#home-left span {
     color: purple;
 }
 
-#page1-left h2 span {
+#home-left h2 span {
     color: purple;
 }
 
-#page1-left button {
+#home-left button {
     font-size: 20px;
     border-radius: 30px;
     padding: 3px 30px;
@@ -122,50 +133,61 @@ video {
     color: white;
 }
 
-#page1-right {
+#home-right {
     margin-left: 30vw;
 }
 
-#page1-right img {
+#home-right img {
     width: 100%;
     height: 50vh;
 }
 
-#page1-right img:hover {
+#home-right img:hover {
     border-radius: 50%;
     box-shadow: 0px 6px 13px black;
 }
 
-/* page2 css */
+/* about css */
 
-#page2 {
+#about {
     width: 100%;
     height: 100vh;
     /* background-color: rebeccapurple; */
 }
+#about i{
+    position: fixed;
+    right: 10px;
+    bottom: 0px;
+    font-size: 2.5vw;
+    background-color: purple;
+    border-radius: 50%;
+    padding: 16px 16px;
+    color: black;
+}
 
-#page2-top {
+
+#about-top {
     display: flex;
     justify-content: center;
     padding-top: 24px;
     gap: 20px;
 }
 
-#page2-top i {
+#about-top i {
     font-size: 50px;
 
 }
 
-#page2-top h1 {
+#about-top h1 {
     font-size: 40px;
     font-stretch: 2px;
 }
 
-#page2-top span {
+#about-top span {
     color: purple;
 }
 
-#page2-bottom {
+#about-bottom {
     display: flex;
     /* align-items: center; */
     justify-content: space-evenly;
@@ -173,7 +195,7 @@ video {
 }
 
 
-#page2-bottom-left img {
+#about-bottom-left img {
     width: 100%;
     height: 60vh;
     border-radius: 10%;
@@ -181,34 +203,34 @@ video {
     box-shadow: 1px 1px 25px black;
 }
 
-#page2-bottom-left img:hover {
+#about-bottom-left img:hover {
     filter: none;
 }
 
-#page2-bottom-right {
+#about-bottom-right {
     width: 30%;
 
 }
 
-#page2-bottom-right h1 {
+#about-bottom-right h1 {
     font-size: 2.5vw;
 }
 
-#page2-bottom-right p {
+#about-bottom-right p {
     margin-top: 26px;
     font-size: 1vw;
     margin-bottom: 24px;
 }
 
-#page2-bottom-right span {
+#about-bottom-right span {
     font-size: 1.2vw;
 }
 
-#page2-bottom-right h4 {
+#about-bottom-right h4 {
     font-size: 0.99vw;
 }
 
-#page2-bottom-right button {
+#about-bottom-right button {
     padding: 3px 30px;
     font-size: 20px;
     border-radius: 11px;
@@ -218,35 +240,35 @@ video {
     color: white;
 }
 
-#page3 {
+#skill {
     width: 100%;
     height: 100vh;
     background-color: #ff49ff;
 }
 
-#page3-top {
+#skill-top {
     display: flex;
     justify-content: center;
     padding-top: 24px;
     gap: 20px;
 }
 
-#page3-top i {
+#skill-top i {
     font-size: 68px;
     color: black;
 
 }
 
-#page3-top h1 {
+#skill-top h1 {
     font-size: 50px;
     color: black;
 }
 
-#page3-top span {
+#skill-top span {
     color: orange;
 }
 
-#page3-bottom {
+#skill-bottom {
     width: 70%;
     height: 70vh;
     margin-left: 13vw;
@@ -255,7 +277,7 @@ video {
     border-radius: 20px;
 }
 
-#page3-bottom img {
+#skill-bottom img {
     width: 24%;
     height: 30.8vh;
     border-radius: 10px;
@@ -266,44 +288,44 @@ video {
     padding: 24px;
 }
 
-#page3-bottom img:hover {
+#skill-bottom img:hover {
     box-shadow: 0px 6px 13px purple;
     background-color: purple;
 }
 
-#page4 {
+#project {
     width: 100%;
     height: 64vh;
     background-color: #ffd5ff;
 }
 
-#page4-top {
+#project-top {
     display: flex;
     justify-content: center;
     padding-top: 24px;
     gap: 20px;
 }
 
-#page4-top i {
+#project-top i {
     font-size: 50px;
 
 }
 
-#page4-top h1 {
+#project-top h1 {
     font-size: 40px;
 }
 
-#page4-top span {
+#project-top span {
     color: purple;
 }
 
-#page4 p {
+#project p {
     text-align: center;
     font-size: 20px;
     font-weight: 100;
 }
 
-#page4-bottom {
+#project-bottom {
     width: 90%;
     height: 50vh;
     display: flex;
@@ -346,7 +368,7 @@ video {
     height: inherit;
 }
 
-#page4-bottom #box {
+#project-bottom #box {
     width: 30%;
     height: 40vh;
     background-color: red;
@@ -371,33 +393,33 @@ video {
     padding-left: 10px;
 }
 
-#page5 {
+#contact {
     width: 100%;
     height: 96vh;
     /* background-color: aqua; */
 }
 
-#page5-top {
+#contact-top {
     display: flex;
     justify-content: center;
     padding-top: 24px;
     gap: 20px;
 }
 
-#page5-top i {
+#contact-top i {
     font-size: 50px;
 
 }
 
-#page5-top h1 {
+#contact-top h1 {
     font-size: 40px;
 }
 
-#page5-top span {
+#contact-top span {
     color: purple;
 }
 
-#page5-bottom {
+#contact-bottom {
     width: 80%;
     height: 70vh;
     background-color: rgb(255, 203, 255);
@@ -410,16 +432,16 @@ video {
     margin-top: 2vw;
 }
 
-#page5-bottom-left img {
+#contact-bottom-left img {
     width: 100%;
     height: 60vh;
 }
 
-#page5-bottom-right {
+#contact-bottom-right {
     margin-right: 4%;
 }
 
-#page5-bottom-right input {
+#contact-bottom-right input {
     /* font-size: 3vw; */
     padding: 11px 14vw;
     margin-bottom: 1vw;
@@ -427,17 +449,17 @@ video {
     border: none;
 }
 
-#page5-bottom-right input::placeholder {
+#contact-bottom-right input::placeholder {
     color: black;
     font-weight: 900;
     font-size: 20px;
 }
 
-#page5-bottom-right .message {
+#contact-bottom-right .message {
     height: 30vh;
 }
 
-#page5-bottom-right button {
+#contact-bottom-right button {
     padding: 3px 30px;
     font-size: 20px;
     border-radius: 11px;
@@ -604,7 +626,7 @@ h1 {
         color: purple;
     }
     /* page 1 */
-    #page1 {
+    #home {
         height: 100vh;
         width: 100%;
         display: flex;
@@ -615,45 +637,45 @@ h1 {
 
     }
 
-    #page1-left h1 {
+    #home-left h1 {
         font-size: 10vw;
         font-weight: 900;
         position: relative;
         color: black
     }
 
-    #page1-left h2 {
+    #home-left h2 {
         margin-top: 20px;
         font-size: 4vw;
     }
 
 
-    #page1-left button {
+    #home-left button {
         font-size: 4vw;
     }
 
-    #page1-right {
+    #home-right {
         margin-top: 100px;
         margin-left: 0px;
     }
 
-    #page1-right img {
+    #home-right img {
         width: 100%;
         height: 38vh;
     }
 
-    #page1-right img:hover {
+    #home-right img:hover {
         border-radius: 50%;
         box-shadow: 0px 0px 0px black;
     }
 
-    /* page2 */
-    #page2 {
+    /* about */
+    #about {
         width: 100%;
         height: 140vh;
     }
 
-    #page2-bottom {
+    #about-bottom {
         display: flex;
         /* align-items: center; */
         justify-content: center;
@@ -661,11 +683,11 @@ h1 {
         padding-top: 6%;
     }
 
-    #page2-bottom-left {
+    #about-bottom-left {
         display: flex;
     }
 
-    #page2-bottom-left img {
+    #about-bottom-left img {
         width: 60%;
         height: 60vh;
         border-radius: 10%;
@@ -674,39 +696,39 @@ h1 {
         margin: auto;
     }
 
-    #page2-bottom-right {
+    #about-bottom-right {
         width: 70%;
         margin: auto;
         margin-top: 40px;
     }
 
-    #page2-bottom-right h1 {
+    #about-bottom-right h1 {
         margin: 0%;
         font-size: 6vw;
     }
 
-    #page2-bottom-right h2 {
+    #about-bottom-right h2 {
         font-size: 4.5vw;
         margin-bottom: 20px;
         font-weight: 500;
     }
 
-    #page2-bottom-right p {
+    #about-bottom-right p {
         margin-top: 0px;
         font-size: 3vw;
         margin-bottom: 20px;
     }
 
-    #page2-bottom-right span {
+    #about-bottom-right span {
         font-size: 3vw;
         color: blue;
     }
 
-    #page2-bottom-right h4 {
+    #about-bottom-right h4 {
         font-size: 3vw;
     }
 
-    #page2-bottom-right button {
+    #about-bottom-right button {
         padding: 8px 40px;
         font-size: 20px;
         border-radius: 11px;
@@ -717,33 +739,33 @@ h1 {
     }
 
 
-    /* page3 */
+    /* skill */
 
-    #page3 {
+    #skill {
         width: 100%;
         height: 94vh;
         background-color: #ff49ff;
     }
     
-    #page3-top {
+    #skill-top {
         display: flex;
         justify-content: center;
         padding-top: 6px;
         gap: 20px;
     }
 
-    #page3-top h1 {
+    #skill-top h1 {
         font-size: 40px;
         color: black;
     }
     
-    #page3-top i {
+    #skill-top i {
         font-size: 42px;
         color: black;
         padding-top: 0px
     }
 
-    #page3-bottom {
+    #skill-bottom {
         width: 80%;
         height: 80vh;
         margin: auto;
@@ -752,7 +774,7 @@ h1 {
         border-radius: 20px;
     }
     
-    #page3-bottom img {
+    #skill-bottom img {
         width: 40%;
         height: 21.8vh;
         border-radius: 10px;
@@ -762,42 +784,42 @@ h1 {
         padding: 24px;
     }
 
-    /* page4 */
-    #page4 {
+    /* project */
+    #project {
         width: 100%;
         height: 120vh;
         background-color: #ffd5ff;
     }
     
-    #page4-top {
+    #project-top {
         display: flex;
         justify-content: center;
         padding-top: 24px;
         gap: 20px;
     }
     
-    #page4-top i {
+    #project-top i {
         font-size: 40px;
         padding-top: 2px;
     
     }
     
-    #page4-top h1 {
+    #project-top h1 {
         font-size: 31px;
     }
     
-    #page4-top span {
+    #project-top span {
         color: purple;
     }
     
-    #page4 p {
+    #project p {
         text-align: center;
         font-size: 17px;
         font-weight: 100;
         margin-bottom: 14px;
     }
     
-    #page4-bottom {
+    #project-bottom {
         width: 90%;
         height: 98vh;
         display: flex;
@@ -838,7 +860,7 @@ h1 {
         height: inherit;
     }
     
-    #page4-bottom #box {
+    #project-bottom #box {
         width: 90%;
         height: 100vh;
         background-color: red;
@@ -865,35 +887,35 @@ h1 {
     }
     
 
-    /* page5 */
-    #page5 {
+    /* contact */
+    #contact {
         width: 100%;
         height: 80vh;
         /* background-color: aqua; */
         
     }
     
-    #page5-top {
+    #contact-top {
         display: flex;
         justify-content: center;
         padding-top: 24px;
         gap: 20px;
     }
     
-    #page5-top i {
+    #contact-top i {
         font-size: 50px;
     
     }
     
-    #page5-top h1 {
+    #contact-top h1 {
         font-size: 34px;
     }
     
-    #page5-top span {
+    #contact-top span {
         color: purple;
     }
     
-    #page5-bottom {
+    #contact-bottom {
         margin: auto;
         width: 76%;
         height: 60vh;
@@ -905,16 +927,16 @@ h1 {
         margin-top: 6vw;
     }
     
-    #page5-bottom-left img {
+    #contact-bottom-left img {
        display: none;
     }
     
-    #page5-bottom-right {
+    #contact-bottom-right {
         margin-right: 4%;
         margin: auto;
     }
     
-    #page5-bottom-right input {
+    #contact-bottom-right input {
         font-size: 3vw;
         padding: 15px 14vw;
         margin-bottom: 4vw;
@@ -922,17 +944,17 @@ h1 {
         border: none;
     }
     
-    #page5-bottom-right input::placeholder {
+    #contact-bottom-right input::placeholder {
         color: black;
         font-weight: 900;
         font-size: 20px;
     }
     
-    #page5-bottom-right .message {
+    #contact-bottom-right .message {
         height: 14vh;
     }
     
-    #page5-bottom-right button {
+    #contact-bottom-right button {
         padding: 3px 30px;
         font-size: 20px;
         border-radius: 11px;
@@ -974,7 +996,7 @@ h1 {
         margin-bottom: 8px;
     }
     
-    #footer-main ul li span {
+    #footer-main ul a {
         padding-right: 0.4vw;
     }
     
@@ -985,7 +1007,7 @@ h1 {
     }
     
     #footer1 {
-        width: 70%;
+        width: 80%;
         margin-left: 10vw;
 
     }
