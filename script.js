@@ -8,12 +8,12 @@ const typed = new Typed('.multiple-text', {
 
 var tl = gsap.timeline()
 
-tl.to("#page1-left button", {
+tl.to("#home-left button", {
     y: -70,
     opacity: 0,
     duration: 0.80,
     scrollTrigger: {
-        trigger: "#page1 button",
+        trigger: "#home button",
         scroll: "body",
         start: "top -26",
         end: "top 30%",
@@ -21,12 +21,12 @@ tl.to("#page1-left button", {
         // markers:true
 }});
 
-tl.to("#page1 img", {
+tl.to("#home img", {
     y: -100,
     opacity: 0,
     duration: 0.80,
     scrollTrigger: {
-        trigger: "#page1 img",
+        trigger: "#homeimg",
         scroll: "body",
         start: "top -330",
         end: "top -30%",
@@ -34,12 +34,12 @@ tl.to("#page1 img", {
         // markers:true
 }});
 
-tl.to("#page2-bottom-right button", {
+tl.to("#about-bottom-right button", {
     y: -30,
     opacity: 0,
 
     scrollTrigger: {
-        trigger: "#page2-bottom-right button",
+        trigger: "#about-bottom-right button",
         scroll: "body",
         start: "top 10",
         end: "top 700",
@@ -49,11 +49,11 @@ tl.to("#page2-bottom-right button", {
 
     }});
 
-    tl.to("#page2-bottom-right span ", {
+    tl.to("#about-bottom-right span ", {
     y: -30,
     opacity: 0,
     scrollTrigger: {
-        trigger: "#page2-bottom-right span",
+        trigger: "#about-bottom-right span",
         scroll: "body",
         start: "top 10",
         end: "top 700",
@@ -62,11 +62,11 @@ tl.to("#page2-bottom-right button", {
 
     }});
 
-    tl.to("#page2-bottom-right h4", {
+    tl.to("#about-bottom-right h4", {
     y: -30,
     opacity: 0,
     scrollTrigger: {
-        trigger: "#page2-bottom-right h4",
+        trigger: "#about-bottom-right h4",
         scroll: "body",
         start: "top 10",
         end: "top 700",
@@ -74,11 +74,11 @@ tl.to("#page2-bottom-right button", {
         // markers:true
     }});
 
-    tl.to("#page2-bottom-right p", {
+    tl.to("#about-bottom-right p", {
     y: -30,
     opacity: 0,
     scrollTrigger: {
-        trigger: "#page2-bottom-right p",
+        trigger: "#about-bottom-right p",
         scroll: "body",
         start: "top 10",
         end: "top 700",
@@ -86,11 +86,11 @@ tl.to("#page2-bottom-right button", {
         // markers:true
 }});
 
-tl.to("#page2-bottom-right h1", {
+tl.to("#about-bottom-right h1", {
     y: -30,
     opacity: 0,
     scrollTrigger: {
-        trigger: "#page2-bottom-right h1",
+        trigger: "#about-bottom-right h1",
         scroll: "body",
         start: "top 10",
         end: "top 700",
@@ -98,11 +98,11 @@ tl.to("#page2-bottom-right h1", {
         // markers:true
 }});
 
-tl.to("#page3-bottom", {
+tl.to("#skill-bottom", {
     y: -30,
     opacity: 0,
     scrollTrigger: {
-        trigger: "#page3-bottom",
+        trigger: "#skill-bottom",
         scroll: "body",
         start: "top -360",
         end: "top 700",
@@ -110,11 +110,11 @@ tl.to("#page3-bottom", {
         // markers:true
     }});
 
-tl.to("#page4-bottom", {
+tl.to("#project-bottom", {
     y: -30,
     opacity: 0,
     scrollTrigger: {
-        trigger: "#page4-bottom",
+        trigger: "#project-bottom",
         scroll: "body",
         start: "top -150",
         end: "top 700",
@@ -122,11 +122,11 @@ tl.to("#page4-bottom", {
         // markers:true
     }});
 
-tl.from("#page5-bottom", {
+tl.from("#contact-bottom", {
     y: -30,
     opacity: 0,
     scrollTrigger: {
-        trigger: "#page5-bottom",
+        trigger: "#contact-bottom",
         scroll: "body",
         start: "top 600",
         end: "top 700",
@@ -135,6 +135,11 @@ tl.from("#page5-bottom", {
     }});
 
 
+    tl.to("#about i",{
+        opacity: 1,
+        y: -100,
+        duration: 2
+    })
     
     const toggleBtn = document.querySelector("#toggle-btn")
     const toggleBtnIcon = document.querySelector("#toggle-btn i")
@@ -145,3 +150,9 @@ tl.from("#page5-bottom", {
         const isOpen = dropDownMenu.classList.contains('open')
 
     }
+
+
+
+
+
+   
