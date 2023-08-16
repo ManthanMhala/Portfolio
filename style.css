@@ -12,17 +12,6 @@ body {
     width: 100%;
 }
 
-
-#minicircle{
-    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    background-color: purple;
-    border-radius: 50%;
-    z-index: 99999;
-    filter: blur(15px);
-}
 video {
     height: 100vh;
     width: 100%;
@@ -58,7 +47,6 @@ video {
     color: purple;
     cursor: pointer;
     font-weight: 900;
-
 }
 
 #tags {
@@ -97,10 +85,7 @@ video {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* padding-top: 9%; */
     z-index: 10;
-    /* margin-top: 10%; */
-
 }
 
 #home-left h1 {
@@ -124,9 +109,10 @@ video {
 }
 
 #home-left button {
-    font-size: 20px;
-    border-radius: 30px;
     padding: 3px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 11px;
     margin-top: 30px;
     background-color: purple;
     box-shadow: 0px 6px 13px purple;
@@ -147,14 +133,14 @@ video {
     box-shadow: 0px 6px 13px black;
 }
 
-/* about css */
 
+/* about css */
 #about {
     width: 100%;
     height: 100vh;
-    /* background-color: rebeccapurple; */
 }
-#about i{
+
+#about i {
     position: fixed;
     right: 10px;
     bottom: 0px;
@@ -163,8 +149,8 @@ video {
     border-radius: 50%;
     padding: 16px 16px;
     color: black;
+    z-index: 99;
 }
-
 
 #about-top {
     display: flex;
@@ -189,11 +175,9 @@ video {
 
 #about-bottom {
     display: flex;
-    /* align-items: center; */
     justify-content: space-evenly;
     padding-top: 6%;
 }
-
 
 #about-bottom-left img {
     width: 100%;
@@ -209,7 +193,6 @@ video {
 
 #about-bottom-right {
     width: 30%;
-
 }
 
 #about-bottom-right h1 {
@@ -233,6 +216,7 @@ video {
 #about-bottom-right button {
     padding: 3px 30px;
     font-size: 20px;
+    border: none;
     border-radius: 11px;
     margin-top: 30px;
     background-color: purple;
@@ -240,9 +224,10 @@ video {
     color: white;
 }
 
+/* Skill CSS */
 #skill {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background-color: #ff49ff;
 }
 
@@ -256,7 +241,6 @@ video {
 #skill-top i {
     font-size: 68px;
     color: black;
-
 }
 
 #skill-top h1 {
@@ -269,30 +253,63 @@ video {
 }
 
 #skill-bottom {
-    width: 70%;
-    height: 70vh;
-    margin-left: 13vw;
+    width: 50%;
+    height: 60vh;
+    margin: auto;
     margin-top: 2vw;
-    background-color: rgb(181, 88, 181);
+    background-color: rgb(255 218 255);
     border-radius: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 2px 20px #000000;
 }
 
 #skill-bottom img {
-    width: 24%;
+    width: -webkit-fill-available;
     height: 30.8vh;
-    border-radius: 10px;
-    background-color: rgb(166, 4, 166);
-    margin-top: 1vw;
-    margin-left: 4.6vw;
-    color: white;
-    padding: 24px;
+    padding: 20px;
 }
 
-#skill-bottom img:hover {
-    box-shadow: 0px 6px 13px purple;
-    background-color: purple;
+.swiper {
+    width: 240px;
+    height: 320px;
 }
 
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.swiper-slide:nth-child(1n) {
+    background-color: rgb(206, 17, 17);
+}
+
+.swiper-slide:nth-child(2n) {
+    background-color: rgb(0, 140, 255);
+}
+
+.swiper-slide:nth-child(3n) {
+    background-color: rgb(10, 184, 111);
+}
+
+.swiper-slide:nth-child(4n) {
+    background-color: rgb(211, 122, 7);
+}
+
+.swiper-slide:nth-child(5n) {
+    background-color: dimgray;
+}
+
+.swiper-slide:nth-child(6n) {
+    background-color: black;
+}
+
+/* Project CSS */
 #project {
     width: 100%;
     height: 64vh;
@@ -308,7 +325,6 @@ video {
 
 #project-top i {
     font-size: 50px;
-
 }
 
 #project-top h1 {
@@ -331,7 +347,6 @@ video {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: black; */
     margin-left: 5%;
     flex-wrap: wrap;
 }
@@ -342,11 +357,11 @@ video {
     justify-content: end;
     overflow: hidden;
     position: relative;
-
 }
 
 #box button {
     position: absolute;
+    border: none;
     top: 40%;
     left: 40%;
     padding: 3px 30px;
@@ -361,6 +376,8 @@ video {
 #box:hover button {
     opacity: 1;
     transition: ease-in-out 0.40s;
+    border: none;
+
 }
 
 #box img {
@@ -393,10 +410,10 @@ video {
     padding-left: 10px;
 }
 
+/* Contact CSS */
 #contact {
     width: 100%;
     height: 96vh;
-    /* background-color: aqua; */
 }
 
 #contact-top {
@@ -408,7 +425,6 @@ video {
 
 #contact-top i {
     font-size: 50px;
-
 }
 
 #contact-top h1 {
@@ -442,7 +458,6 @@ video {
 }
 
 #contact-bottom-right input {
-    /* font-size: 3vw; */
     padding: 11px 14vw;
     margin-bottom: 1vw;
     border-radius: 8px;
@@ -460,6 +475,7 @@ video {
 }
 
 #contact-bottom-right button {
+    border: none;
     padding: 3px 30px;
     font-size: 20px;
     border-radius: 11px;
@@ -470,6 +486,7 @@ video {
     color: white;
 }
 
+/* Footer CSS */
 #footer {
     width: 100%;
     height: 48vh;
@@ -485,13 +502,11 @@ video {
     height: 40vh;
     margin-left: 6%;
     border-radius: 14px;
-    /* box-shadow: 0px 1px 10px black; */
     padding-top: 2vw;
 }
 
 #footer-main ul li {
     list-style: none;
-    /* margin-left: 0.2vw; */
     cursor: pointer;
     font-size: 1.4vw;
     margin-bottom: 2px;
@@ -516,7 +531,6 @@ video {
 #footer1 h1 {
     margin-bottom: 1vw;
 }
-
 
 #footer2,
 #footer3 h1 {
@@ -558,9 +572,9 @@ h1 {
 }
 
 #create {
-    border-top: 2px solid wheat;
+    border-top: 1px solid orange;
     text-align: center;
-    padding-top: 0.8vw;
+    margin-top: 1.5vw;
 }
 
 #create h1 {
@@ -585,16 +599,15 @@ h1 {
 #dropdown-menu.open {
     height: 310px;
 }
+
 #dropdown-menu li {
     padding: 0.8rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    ;
 }
 
 /*  Responsive*/
-
 @media (max-width: 600px) {
     #tags a {
         display: none;
@@ -604,7 +617,7 @@ h1 {
         display: block;
     }
 
-    #logo h1{
+    #logo h1 {
         font-size: 4vw;
     }
 
@@ -612,19 +625,20 @@ h1 {
         display: block;
     }
 
-    #dropdown-menu li a{
+    #dropdown-menu li a {
         text-decoration: none;
         font-size: 1.6rem;
         color: black;
     }
 
-    #dropdown-menu li a:hover{
+    #dropdown-menu li a:hover {
         font-weight: 900;
         transition: 0.20s ease-in-out;
         text-decoration: underline;
         scale: 1.2;
         color: purple;
     }
+
     /* page 1 */
     #home {
         height: 100vh;
@@ -634,7 +648,6 @@ h1 {
         align-items: center;
         justify-content: center;
         z-index: 10;
-
     }
 
     #home-left h1 {
@@ -649,9 +662,15 @@ h1 {
         font-size: 4vw;
     }
 
-
     #home-left button {
-        font-size: 4vw;
+        border: none;
+        padding: 8px 40px;
+        font-size: 20px;
+        border-radius: 11px;
+        margin-top: 40px;
+        background-color: purple;
+        box-shadow: 0px 6px 13px purple;
+        color: white;
     }
 
     #home-right {
@@ -729,6 +748,7 @@ h1 {
     }
 
     #about-bottom-right button {
+        border: none;
         padding: 8px 40px;
         font-size: 20px;
         border-radius: 11px;
@@ -740,13 +760,12 @@ h1 {
 
 
     /* skill */
-
     #skill {
         width: 100%;
-        height: 94vh;
+        height: 66vh;
         background-color: #ff49ff;
     }
-    
+
     #skill-top {
         display: flex;
         justify-content: center;
@@ -758,7 +777,7 @@ h1 {
         font-size: 40px;
         color: black;
     }
-    
+
     #skill-top i {
         font-size: 42px;
         color: black;
@@ -767,22 +786,38 @@ h1 {
 
     #skill-bottom {
         width: 80%;
-        height: 80vh;
+        height: 50vh;
         margin: auto;
         margin-top: 2vw;
         background-color: rgb(181, 88, 181);
         border-radius: 20px;
+        overflow: hidden;
     }
-    
+
     #skill-bottom img {
-        width: 40%;
+        width: -webkit-fill-available;
         height: 21.8vh;
         border-radius: 10px;
-        background-color: rgb(166, 4, 166);
         margin-top: 4vw;
         color: white;
         padding: 24px;
     }
+
+    .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 18px;
+        font-size: 22px;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .swiper {
+        width: 200px;
+        height: 300px;
+    }
+
 
     /* project */
     #project {
@@ -790,35 +825,34 @@ h1 {
         height: 120vh;
         background-color: #ffd5ff;
     }
-    
+
     #project-top {
         display: flex;
         justify-content: center;
         padding-top: 24px;
         gap: 20px;
     }
-    
+
     #project-top i {
         font-size: 40px;
         padding-top: 2px;
-    
     }
-    
+
     #project-top h1 {
         font-size: 31px;
     }
-    
+
     #project-top span {
         color: purple;
     }
-    
+
     #project p {
         text-align: center;
         font-size: 17px;
         font-weight: 100;
         margin-bottom: 14px;
     }
-    
+
     #project-bottom {
         width: 90%;
         height: 98vh;
@@ -826,19 +860,19 @@ h1 {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        /* background-color: black; */
-        margin:auto;
+        margin: auto;
         flex-wrap: nowrap;
     }
-    
+
     #box {
         justify-content: end;
         overflow: hidden;
         position: relative;
-    
+
     }
-    
-     #box button {
+
+    #box button {
+        border: none;
         position: absolute;
         top: 40%;
         left: 40%;
@@ -850,16 +884,18 @@ h1 {
         color: white;
         opacity: 0;
     }
-     #box:hover button {
+
+    #box:hover button {
         opacity: 0;
         transition: ease-in-out 0.40s;
+        border: none;
     }
-     
+
     #box img {
         width: auto;
         height: inherit;
     }
-    
+
     #project-bottom #box {
         width: 90%;
         height: 100vh;
@@ -868,53 +904,50 @@ h1 {
         border-radius: 12px;
         margin-bottom: 16px;
     }
-    
+
     #box #box1-content {
         background-color: purple;
         color: white;
         height: 54px;
     }
-    
+
     #box #box1-content:hover {
         color: purple;
         background-color: white;
         transition: ease-in 0.40s;
     }
-    
+
     #box #box1-content h1 {
         padding-left: 10px;
         font-size: 20px;
     }
-    
 
     /* contact */
     #contact {
         width: 100%;
         height: 80vh;
         /* background-color: aqua; */
-        
     }
-    
+
     #contact-top {
         display: flex;
         justify-content: center;
         padding-top: 24px;
         gap: 20px;
     }
-    
+
     #contact-top i {
         font-size: 50px;
-    
     }
-    
+
     #contact-top h1 {
         font-size: 34px;
     }
-    
+
     #contact-top span {
         color: purple;
     }
-    
+
     #contact-bottom {
         margin: auto;
         width: 76%;
@@ -926,16 +959,16 @@ h1 {
         box-shadow: 0px 1px 10px black;
         margin-top: 6vw;
     }
-    
+
     #contact-bottom-left img {
-       display: none;
+        display: none;
     }
-    
+
     #contact-bottom-right {
         margin-right: 4%;
         margin: auto;
     }
-    
+
     #contact-bottom-right input {
         font-size: 3vw;
         padding: 15px 14vw;
@@ -943,51 +976,49 @@ h1 {
         border-radius: 8px;
         border: none;
     }
-    
+
     #contact-bottom-right input::placeholder {
         color: black;
         font-weight: 900;
         font-size: 20px;
     }
-    
+
     #contact-bottom-right .message {
         height: 14vh;
     }
-    
+
     #contact-bottom-right button {
-        padding: 3px 30px;
+        float: right;
+        border: none;
+        padding: 8px 40px;
         font-size: 20px;
         border-radius: 11px;
-        margin-top: 0px;
+        margin-top: 40px;
         background-color: purple;
         box-shadow: 0px 6px 13px purple;
-        /* margin-left: 36.2vw; */
-        float: right;
         color: white;
     }
 
     /* footer */
-
     #footer {
         width: 100%;
         height: 84vh;
         background-color: #d3d3d3;
         color: purple;
-    
     }
-    
+
     #footer-main {
         display: flex;
         flex-direction: column;
-        justify-content:center;
+        justify-content: center;
         width: 100%;
-        height:80vh;
+        height: 80vh;
         margin-left: 0%;
         border-radius: 14px;
         /* box-shadow: 0px 1px 10px black; */
         /* padding-top: 2vw; */
     }
-    
+
     #footer-main ul li {
         list-style: none;
         /* margin-left: 0.2vw; */
@@ -995,44 +1026,44 @@ h1 {
         font-size: 4vw;
         margin-bottom: 8px;
     }
-    
+
     #footer-main ul a {
         padding-right: 0.4vw;
     }
-    
+
     #footer-main ul li:hover {
         color: orange;
         transition: ease-in 0.30s;
         font-weight: 900;
     }
-    
+
     #footer1 {
         width: 80%;
         margin-left: 10vw;
 
     }
-    
+
     #footer1 h1 {
         margin-bottom: 2vw;
 
     }
-    
+
     #footer2,
     #footer3 {
         width: 70%;
         margin-top: 2vw;
         margin-left: 10vw;
     }
-    
+
     #footer2,
-    #footer3  h1 {
+    #footer3 h1 {
         margin-bottom: 1vw;
     }
-    
+
     #footer1 p {
         margin-bottom: 2vw;
     }
-    
+
     #footer3 h6 {
         display: inline-block;
         font-size: 4vw;
@@ -1040,12 +1071,11 @@ h1 {
         padding-bottom: 1vw;
     }
 
-    
     #footer3-third h6 {
         margin-left: 17px;
     }
-    
-    #symbol{
+
+    #symbol {
         margin-top: 30px;
     }
 
@@ -1057,19 +1087,19 @@ h1 {
         cursor: pointer;
         color: white;
     }
-    
+
     #symbol i:hover {
         background-color: white;
         color: purple;
         transition: ease-in 0.20s;
     }
-    
+
     #create {
         border-top: 2px solid wheat;
         text-align: center;
         margin-top: 10px;
     }
-    
+
     #create h1 {
         font-size: 2.4vw;
     }
