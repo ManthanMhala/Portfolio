@@ -4,11 +4,12 @@
 <head title="">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     <title>Portfolio | Manthan Mhala</title>
 </head>
 
-<body  >
+<body>
     <!-- oncontextmenu=" return false" -->
     <div id="nav">
         <div id="logo">
@@ -25,6 +26,7 @@
             <i class="fa-solid fa-bars"></i>
         </div>
     </div>
+
     <div id="dropdown-menu">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -47,7 +49,7 @@
             <div id="home-right">
                 <img src="./pngwing.com-removebg-preview-modified.png" alt="">
             </div>
-            
+
         </div>
 
         <div id="about" class="About Us">
@@ -69,7 +71,7 @@
                     <h4>mhalamanthan8@gmail.com</h4>
                     <span>Place :</span>
                     <h4>Amravati, India - 444704</h4>
-                    <button>Resume ></button>
+                    <a href="https://drive.google.com/file/d/1Tke2HtWOcKjItdzNjPBxZuUWfr1B8E6t/view?usp=drive_link"><button>Resume ></button></a>
                 </div>
             </div>
             <a href="#home"><i class="fa-solid fa-arrow-up-from-bracket fa-bounce"></i></a>
@@ -81,13 +83,22 @@
                 <h1>Skills & <span>Abilities</span></h1>
             </div>
             <div id="skill-bottom">
-                <img src="https://www.freepnglogos.com/uploads/javascript-png/png-javascript-badge-picture-8.png"
-                    alt="">
-                <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" alt="">
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" alt="">
-                <img src="./green_-removebg-preview.png" alt="">
-                <img src="./355-3559358_c-and-c-logo-hd-png-download__1_-removebg-preview.png" alt="">
-                <img src="https://1000logos.net/wp-content/uploads/2020/09/Java-Logo.png" alt="">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img
+                                src="https://www.freepnglogos.com/uploads/javascript-png/png-javascript-badge-picture-8.png"
+                                alt=""></div>
+                        <div class="swiper-slide"><img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png"
+                                alt=""></div>
+                        <div class="swiper-slide"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png"
+                                alt=""></div>
+                        <div class="swiper-slide"><img src="./green_-removebg-preview.png" alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="./355-3559358_c-and-c-logo-hd-png-download__1_-removebg-preview.png" alt=""></div>
+                        <div class="swiper-slide"> <img
+                                src="https://1000logos.net/wp-content/uploads/2020/09/Java-Logo.png" alt=""></div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -196,6 +207,7 @@
                     </div>
                 </div>
             </div>
+
             <div id="create">
                 <h1>Designed With ❤️ By Manthan Mhala</h1>
             </div>
@@ -204,6 +216,7 @@
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/273647a6ef.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
