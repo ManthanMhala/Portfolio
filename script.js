@@ -6,6 +6,7 @@ const typed = new Typed('.multiple-text', {
     loop: true
 });
 
+// scroll Trigger
 var tl = gsap.timeline()
 
 tl.to("#home-left button", {
@@ -19,7 +20,8 @@ tl.to("#home-left button", {
         end: "top 30%",
         scrub: 1,
         // markers:true
-}});
+    }
+});
 
 tl.to("#home img", {
     y: -100,
@@ -32,14 +34,15 @@ tl.to("#home img", {
         end: "top -30%",
         scrub: 1,
         // markers:true
-}});
+    }
+});
 
-tl.to("#about-bottom-right button", {
+tl.to("#page2-bottom-right button", {
     y: -30,
     opacity: 0,
 
     scrollTrigger: {
-        trigger: "#about-bottom-right button",
+        trigger: "#page2-bottom-right button",
         scroll: "body",
         start: "top 10",
         end: "top 700",
@@ -47,56 +50,61 @@ tl.to("#about-bottom-right button", {
         // markers:true,
 
 
-    }});
+    }
+});
 
-    tl.to("#about-bottom-right span ", {
+tl.to("#page2-bottom-right span ", {
     y: -30,
     opacity: 0,
     scrollTrigger: {
-        trigger: "#about-bottom-right span",
+        trigger: "#page2-bottom-right span",
         scroll: "body",
         start: "top 10",
         end: "top 700",
         scrub: 1,
         // markers:true
 
-    }});
+    }
+});
 
-    tl.to("#about-bottom-right h4", {
+tl.to("#page2-bottom-right h4", {
     y: -30,
     opacity: 0,
     scrollTrigger: {
-        trigger: "#about-bottom-right h4",
+        trigger: "#page2-bottom-right h4",
         scroll: "body",
         start: "top 10",
         end: "top 700",
         scrub: 1,
         // markers:true
-    }});
+    }
+});
 
-    tl.to("#about-bottom-right p", {
+tl.to("#page2-bottom-right p", {
     y: -30,
     opacity: 0,
     scrollTrigger: {
-        trigger: "#about-bottom-right p",
+        trigger: "#page2-bottom-right p",
         scroll: "body",
         start: "top 10",
         end: "top 700",
         scrub: 1,
         // markers:true
-}});
+    }
+});
 
-tl.to("#about-bottom-right h1", {
+tl.to("#page2-bottom-right h1", {
     y: -30,
     opacity: 0,
     scrollTrigger: {
-        trigger: "#about-bottom-right h1",
+        trigger: "#page2-bottom-right h1",
         scroll: "body",
         start: "top 10",
         end: "top 700",
         scrub: 1,
         // markers:true
-}});
+    }
+});
 
 tl.to("#skill-bottom", {
     y: -30,
@@ -108,7 +116,8 @@ tl.to("#skill-bottom", {
         end: "top 700",
         scrub: 1,
         // markers:true
-    }});
+    }
+});
 
 tl.to("#project-bottom", {
     y: -30,
@@ -120,7 +129,8 @@ tl.to("#project-bottom", {
         end: "top 700",
         scrub: 1,
         // markers:true
-    }});
+    }
+});
 
 tl.from("#contact-bottom", {
     y: -30,
@@ -132,27 +142,29 @@ tl.from("#contact-bottom", {
         end: "top 700",
         scrub: 1,
         // markers:true
-    }});
-
-
-    tl.to("#about i",{
-        opacity: 1,
-        y: -100,
-        duration: 2
-    })
-    
-    const toggleBtn = document.querySelector("#toggle-btn")
-    const toggleBtnIcon = document.querySelector("#toggle-btn i")
-    const dropDownMenu = document.querySelector("#dropdown-menu")
-
-    toggleBtnIcon.onclick = function (){
-        dropDownMenu.classList.toggle('open')
-        const isOpen = dropDownMenu.classList.contains('open')
-
     }
+});
 
 
+tl.to("#about i", {
+    opacity: 1,
+    y: -100,
+    duration: 2
+})
 
+// Dropdown Menu
+const toggleBtn = document.querySelector("#toggle-btn")
+const toggleBtnIcon = document.querySelector("#toggle-btn i")
+const dropDownMenu = document.querySelector("#dropdown-menu")
 
+toggleBtnIcon.onclick = function () {
+    dropDownMenu.classList.toggle('open')
+    const isOpen = dropDownMenu.classList.contains('open')
 
-   
+}
+
+// Swiper
+var swiper = new Swiper(".mySwiper", {
+    effect: "cards",
+    grabCursor: true,
+});
